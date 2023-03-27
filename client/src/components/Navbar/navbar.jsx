@@ -13,7 +13,7 @@ const Navbar = () => {
       body: JSON.stringify(res.profileObj),
     };
 
-    await fetch("https://mym-backend-3cd6.onrender.com/user", requestOptions);
+    await fetch("https://mym-backend-95im.onrender.com/user", requestOptions);
     location.reload();
   };
   const onFailure = () => {
