@@ -5,9 +5,9 @@ const userHandler = async (req, res) => {
 
   const user = {
     name:
-      user.givenName + " " + user.familyName === undefined
-        ? ""
-        : user.familyName,
+      user.givenName +
+      " " +
+      (user.familyName === undefined ? "" : user.familyName),
     email: result.email,
     profilePic: user.imageURL,
   };

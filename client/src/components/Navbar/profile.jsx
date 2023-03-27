@@ -13,9 +13,9 @@ const Profile = ({ user }) => {
       <div>
         <img src={user.imageUrl} alt={user.givenName} />
         <h2>
-          {user.givenName + " " + user.familyName === undefined
-            ? ""
-            : user.familyName}
+          {user.givenName +
+            " " +
+            (user.familyName === undefined ? "" : user.familyName)}
         </h2>
       </div>
       <div className="loginButton">
