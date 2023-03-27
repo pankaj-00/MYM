@@ -15,7 +15,7 @@ const userHandler = async (req, res) => {
   if ((await findUser({ email: user.email })) === null) {
     createUser(user);
   }
-
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.send(user);
 };
 
