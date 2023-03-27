@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleLogout } from "@react-oauth/google";
+import { GoogleLogout } from "react-google-login";
 import "./navbar.scss";
 
 const Profile = ({ user }) => {
