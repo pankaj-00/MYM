@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GoogleLogin } from "react-google-login";
+import { GoogleLogin } from "@react-oauth/google";
 import Profile from "./profile";
 import "./navbar.scss";
 
