@@ -1,15 +1,15 @@
 import { findUser, createUser } from "../utils/userFunctions.js";
 
 const userHandler = async (req, res) => {
-  const result = JSON.parse(req.body);
+  const result = req.body;
 
   const user = {
     name:
-      user.givenName +
+      result.givenName +
       " " +
-      (user.familyName === undefined ? "" : user.familyName),
+      (result.familyName === undefined ? "" : result.familyName),
     email: result.email,
-    profilePic: user.imageURL,
+    profilePic: result.imageURL,
   };
 
   if ((await findUser({ email: user.email })) === null) {
